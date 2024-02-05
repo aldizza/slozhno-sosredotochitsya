@@ -3,21 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-light {
-  /* Переменные светлой темы */   
-  --bg-color: #FFF1F7;
-  --accent-color: #FF8DCB;
-  --focus-color: #353430;
-  --title-color: #FFC2E6;
-  --title-shadow: #FF0070;
-  --accent-bg-color: #FF8DCB;
-  --text-color-p: #353430;
-  --text-color: #353430;
-  --link-color: #353430;
-  --link-shadow: #FF8DCB;
-  --main-font: "IBM Plex Mono";
-  --hover: #FF0070; 
-}
 
 
 .page.theme_light {
@@ -27,6 +12,7 @@
   */
   --bg-color: #FFF1F7;
   --accent-color: #FF8DCB;
+  --accent-color-corner: #353430;
   --title-color: #FFC2E6;
   --title-shadow: #FF0070;
   --accent-bg-color: #FF8DCB;
@@ -35,15 +21,51 @@
   --link-color: #353430;
   --link-shadow: #FF8DCB;
   --main-font: "IBM Plex Mono";
-  --hover: #FF0070; 
-  background: url(../images/cover-image-light.png), var(--bg-color, );
+  --button: #353430;
+  --hover: 1px solid rgb(53, 52, 48, 0.4); 
+  --background-image: url(../images/cover-image-light.png);
 }
 
-.page.theme_light .dark-rec {
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF1F7;
+    --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
+     --title-shadow: #FF0070;
+     --accent-bg-color: #FF8DCB;
+     --text-color-p: #353430;
+     --text-color: #353430;
+     --link-color: #353430;
+     --link-shadow: #FF8DCB;
+     --main-font: "IBM Plex Mono";
+     --button: #353430;
+     --hover: 1px solid rgb(53, 52, 48, 0.4); 
+     --background-image: url(../images/cover-image-light.png);
+  }
+}
+
+.page.theme_light.dark-rec {
   display: none;
 }
 
-.page.theme_light .header__theme-menu-button {
-  color: #353430;
+.page.theme_auto .dark-rec {
+  display: none;
 }
+
+.page.theme_auto .decorated-zone::before {
+  border-block-start: 1px solid var(--button, #353430);
+  border-inline-end: 1px solid var(--button, #353430);
+}
+
+.page.theme_auto .decorated-zone::after {
+  border-inline-start: 1px solid var(--button, #353430);
+  border-block-end: 1px solid var(--button, #353430);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid;
+  border-color: var(--hover);
+}
+
+
 

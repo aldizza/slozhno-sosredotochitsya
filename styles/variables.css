@@ -6,6 +6,7 @@
 :root {
   --bg-color: #000028;
   --accent-color: #FF0070;
+  --accent-color-corner: #FF0070;
   --title-color: #DB00FF;
   --title-shadow: #FF0070;
   --accent-bg-color: #ff0070;
@@ -14,5 +15,12 @@
   --link-color: #F1B2CE;
   --link-shadow: #ff0070;
   --main-font: "IBM Plex Mono";
-  --hover: #ff007066;
+  --button: #FF0070;
+  --hover: 1px solid rgb(255, 0, 112, 0.4);
+  --background-image: url(../images/cover-image-dark.png);
 }
+
+.page.theme_light .dark-rec {
+  display: none;
+}
+
