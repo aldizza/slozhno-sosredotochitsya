@@ -12,15 +12,11 @@
   --accent-bg-color: #ff0070;
   --text-color-p: #000028;
   --text-color: #F1B2CE;
+  --title-color-main: #FF0070;
   --link-color: #F1B2CE;
   --link-shadow: #ff0070;
   --main-font: "IBM Plex Mono";
   --button: #FF0070;
-  --hover: 1px solid rgb(255, 0, 112, 0.4);
+  --hover-color: 1px solid rgb(255, 0, 112, 0.4);
   --background-image: url(../images/cover-image-dark.png);
 }
-
-.page.theme_light .dark-rec {
-  display: none;
-}
-
