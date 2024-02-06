@@ -17,6 +17,7 @@
   --title-shadow: #FF0070;
   --accent-bg-color: #FF8DCB;
   --title-color-main: #353430;
+  --text-color-p: #353430;
   --text-color: #353430;
   --link-color: #353430;
   --link-shadow: #FF8DCB;
@@ -35,6 +36,7 @@
     --title-shadow: #FF0070;
     --accent-bg-color: #FF8DCB;
     --title-color-main: #353430;
+    --text-color-p: #353430;
     --text-color: #353430;
     --link-color: #353430;
     --link-shadow: #FF8DCB;
@@ -44,8 +46,8 @@
     --background-image: url(../images/cover-image-light.png);
     }
 
-  .dark-rec {
-    display: none; 
+    .dark-rec {
+      display: none;
     }
 }
 

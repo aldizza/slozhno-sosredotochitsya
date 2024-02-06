@@ -133,7 +133,7 @@
 
 .title-decor {
   background-color: var(--accent-bg-color, #ff0070);
-  color: var(--text-color-p, #000028);
+  color: var(--text-color-p);
   font-family: var(--main-font, "IBM Plex Mono");
   font-size: 18px;
   font-style: normal;
@@ -563,6 +563,8 @@
   }
 
   .which_reduces .section__title {
+    display: grid;
+    grid-template-columns: 315px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
