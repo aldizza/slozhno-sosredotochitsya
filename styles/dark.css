@@ -46,12 +46,3 @@
     --background-image: url(../images/cover-image-dark.png);
   }
 }
-
-.page.theme_dark .dark-rec {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--accent-color);
-  text-transform: uppercase;
-}
