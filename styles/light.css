@@ -44,15 +44,13 @@
     --button: #353430;
     --hover-color: 1px solid rgb(53, 52, 48, 0.4);
     --background-image: url(../images/cover-image-light.png);
-    }
+  }
 
-    .dark-rec {
-      display: none;
-    }
+  .dark-rec {
+    display: none;
+  }
 }
 
 .page.theme_light .dark-rec {
   display: none;
 }
-
-
